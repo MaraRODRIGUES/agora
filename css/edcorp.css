@@ -1,0 +1,47 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+  }
+  
+  /*Início de Navbar*/
+  
+  .navbar-nav > li > a, .navbar-fixed-top .navbar-header {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      line-height: 80px;
+  }
+  
+  .navbar-default .navbar-nav > li > a{
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -ms-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+  }
+  
+  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+     
+      color: #fff;
+  }
+  
+  .navbar-fixed-top .navbar-header .navbar-toggle{
+      margin-top: 13px;
+      border: 0;
+  }
+  
+  
+  @media (max-width: 767px) {
+      .navbar-nav > li > a, .navbar-fixed-top .navbar-header {
+      line-height: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-top: 0;
+      }
+      .navbar-fixed-top .navbar-header .navbar-brand{
+      margin-top: -9px;
+      }
+  }
+
+#dicas-corp{
+  padding-top:20vh;
+}

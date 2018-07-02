@@ -1,0 +1,373 @@
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+/*Início de Navbar*/
+
+.navbar-nav > li > a, .navbar-fixed-top .navbar-header {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 80px;
+}
+
+.navbar-default .navbar-nav > li > a{
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+   
+    color: #fff;
+}
+
+.navbar-fixed-top .navbar-header .navbar-toggle{
+    margin-top: 13px;
+    border: 0;
+}
+
+
+@media (max-width: 767px) {
+    .navbar-nav > li > a, .navbar-fixed-top .navbar-header {
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0;
+    }
+    .navbar-fixed-top .navbar-header .navbar-brand{
+    margin-top: -9px;
+    }
+}
+
+
+
+/* Fim de Navbar */
+
+
+#logo {
+  display: inline-block;
+  width: 30%;
+  background-color: none;
+}
+
+/* .navbar {
+  background-color: 102,102,102;
+  } */
+
+.container {
+  width:100%;
+  align-items: center;
+  
+}
+
+body {
+    background-color: #ECECEC;
+    /* color: #444444; */
+   
+    
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Roboto';
+  }
+  .left-underline {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+  }
+  .left-underline:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #ECECEC;
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.15s;
+    transition-duration: 0.15s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .left-underline:hover:before, .left-underline:focus:before, .left-underline:active:before {
+    right: 0;
+  }
+  div.navbar {
+    position: fixed;
+    width: 100%;
+    background: grey;
+    -webkit-box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow:    0px 2px 6px 0px rgba(50, 50, 50, 0.2);
+    box-shadow:         0px 2px 6px 0px rgba(50, 50, 50, 0.2);
+    z-index: 9999999;
+  }
+  div.navbar > ul.navbar-container {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    overflow: hidden;
+  }
+  div.navbar > ul > li.nav-item {
+    float: right;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    transition: all 0.5s ease;
+  }
+  
+  a.nav-button {
+    font-family: 'Roboto';
+    text-decoration: none;
+    line-height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgba(228, 241, 254, 1);
+    transition: all 0.5s ease;
+  }
+  a.nav-button:hover {
+    text-decoration: none;
+    color: rgb(255,127,0);
+  }
+  li.active > a.nav-button {
+    cursor: default;
+  }
+  .brand-logo {
+    float: left;
+    cursor: default;
+  }
+
+  /* Início do botão ScrolTop */
+  #myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    background-color: rgb(249, 125, 2);
+    color: black; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+}
+
+#myBtn:hover {
+    background-color: rgb(101, 169, 173); 
+}
+
+  /* Início dos Parallax ==> Falta arrumar o responsivo */
+  .parallax {
+    height: 100%;
+    overflow: hidden;
+}
+  .parallax.p1 {
+    background: url(../img/wallhaven-656581.png) no-repeat fixed 70% 0;
+    background-size: cover;
+    color: #fff;
+    padding: 40vh;
+  }
+  .parallax.p2 {
+    background: url(../img/wallhaven-26475.jpg) no-repeat fixed 50% 0;
+    background-size: cover;
+    color: #fff;
+    padding: 20vh;
+  }
+  .parallax.p3 {
+    background: url(../img/wallhaven-630637.jpg) no-repeat fixed 70% 0;
+    background-size: cover;
+    color: #fff;
+    padding: 10vh;
+  }
+  .parallax-text {
+    width: 24em;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    border: .5em solid #fff;
+    margin-left: -10%;
+    padding: 2em 0;
+    text-align: center;
+    z-index: 999;
+  }
+  .parallax > div.blur-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  } 
+  hgroup {
+    
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+    border: 5px solid #fff;
+    /* padding: .5em 3em; */
+    background-color: rgba(0,0,0,.2);
+    z-index: 2;
+    margin-top:20vh;
+  }
+
+ 
+
+
+  
+  .row {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%px;
+    min-height:60vh;
+    margin: 0 auto;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .row > .col-3 {
+    width: 30%;
+    height: 100%;
+    box-sizing: border-box;
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #section-3 {
+    text-align: left;
+    
+  }
+  
+  footer {
+    width: 100%;
+    padding-top: 5vh;
+    display: block;
+    background-color: gray;
+  }
+   .footer-copyright {
+    font-weight: 300;
+    overflow: hidden;
+    height: 15vh;
+    line-height: 30vh;
+    color: rgba(101,169,173, 0.8);
+    background-color: rgba(55, 52, 53);
+  }
+  .container {
+    margin: 0 auto;
+}
+footer img {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 2vh;
+}
+  footer p {
+    border-left: 3px solid #f9a21c;
+    padding-left: 2vh;
+    text-indent: 0vh;
+    color: #ececec;
+    text-align: left;
+  }
+
+
+/* INÍCIO DO RESPONSIVO */
+@media (max-width: 480px) {
+  .navbar-nav > li > a, .navbar-fixed-top .navbar-header {
+  width: 100%;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  }
+  .navbar-fixed-top .navbar-header .navbar-brand{
+  margin-top: -9px;
+  }
+  .navbar{
+    width: 100%;
+    padding: 100%;
+      }
+  a.nav-button {
+    font-family: 'Roboto';
+    text-decoration: none;
+    line-height: 5vh;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    color: rgba(228, 241, 254, 1);
+    transition: all 0.5s ease;
+}
+  }
+}
+
+  h1, h2, h3, h4 navbar {
+    font-size: 12px;
+  }
+  hr{
+    width:100%;
+  }
+  }
+
+@media (max-width:480px) {
+  .parallax p1 {
+  padding: 40vh;
+  padding-bottom: 20vh;
+  }
+  #section-2 {
+    padding-left: 42vh;
+}
+#hp3 {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 16vh;
+  padding-top: 2vh;
+  width: 50vh;
+    
+  
+}
+#dicas {
+  padding: 20px;
+  margin-left: -10vh;
+  margin-right: -22vh;
+  margin-top: 5vh;
+  padding-top: 2vh;
+ }
+}
+
+@media (max-width:480px) {
+  #agora {
+  display:flex;
+  margin:0 auto;
+  margin-left:-12vh;
+  margin-right:-23vh;
+  margin-top:5vh;
+  padding-top:2vh;
+}
+  }
+
+  @media (max-width: 480px) {
+    .navbar-nav > li > a, .navbar-fixed-top .navbar-header {
+      display: flex;
+      width: 100%;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    font-size:8px;
+    }
+  }
+

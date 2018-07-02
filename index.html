@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ágora</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Arquivos de estilo e de script -->
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+    <script src="./js/script.js"></script>
+
+    <!-- Links de Bootstrap e de JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+
+    <!-- Links de Fontes e Ícones -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+    <!-- ARRUMAR NAVBAR: CORRIGIR ALINHAMENTO E INSERIR BRAND COM COLAPSE -->
+
+    <header>
+    <div class="navbar">
+        <ul class="navbar-container">
+           
+            <li class="nav-item">
+                <a href="#section-3" class="left-underline nav-button" data-scroll>QUIZZ</a>
+            </li>
+            <li class="nav-item">
+                <a href="#section-2" class="left-underline nav-button" data-scroll>DICAS</a>
+            </li>
+            <li class="nav-item">
+                <a href="#section-1" class="left-underline nav-button" data-scroll>SOBRE</a>
+
+            </li>
+
+            <li class="nav-item">
+                <a href="#section-h" class="left-underline nav-button" data-scroll>HOME</a>
+
+            </li>
+            <div class="logo-agora">
+            <li><img src="./img/agora_logo_white.png" style="width:20%; margin-top:2vh;"></li>
+            </div>
+
+        </ul>
+    </div>
+
+    <div class="parallax p1" id="section-h">
+        <hgroup id="agora">
+            <div class="container">
+                <h1 class="display-5">Ágora</h1>
+                <p class="lead">Tecnologia para o Conhecimento.</p>
+        </hgroup>
+        </div>
+    </div>
+</header>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <!-- Início da Seção 2 - Sobre -->
+    <div class="sobre" id="section-1">
+        <div class="container">
+            <div class="section-title text-center center"><br>
+                <h2 class="display-4">Sobre</h2>
+                <hr>
+            </div>
+            <div class="container">
+                <p class="lead">Texto explicativo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, facere dolores eum perspiciatis
+                    iusto temporibus enim. Maxime, voluptatibus temporibus fugiat veniam at veritatis nesciunt quisquam error
+                    amet excepturi illo et!
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quaerat soluta perspiciatis vitae repudiandae
+                        dolor porro rem vel accusantium non amet explicabo magni, atque iusto inventore ullam. Voluptate,
+                        nostrum rem.</p>
+                </p>
+                <BR>
+            </div>
+        </div>
+    </div>
+
+    <!-- Início Seção Dicas -->
+
+    <div class="parallax p2" id="section-2">
+        <hgroup id="dicas">
+            <h3 class="display-4">Dicas</h3><br>
+                <p class="lead">Chamada para os cards abaixo com dicas</p>
+        </hgroup>
+    </div>
+    <!-- Início dos Cards -->
+    <div class="container">
+        <div class="section-title text-center center">
+            <h2 class="display-4">Dicas</h2>
+            <hr>
+
+            <div class="card-group">
+                <div class="card">
+                    <img class="card-img-top" src="./img/notebook.png" alt="Card image cap" style="width: 50%; display: flex; align-items: center; margin: 0 auto;">
+                    <div class="card-body">
+                        <h5 class="card-title">Andragogia</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. </p><a href="andrago.html"><button type="button" class="btn btn-secondary">Veja Mais</button></a>   
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="./img/briefcase.png" alt="Card image cap" style="width: 50%; display: flex; align-items: center; margin: 0 auto;">
+                    <div class="card-body">
+                        <h5 class="card-title">Educação Corporativa</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content content.Content.</p>
+                        <a href="edcorp.html"><button type="button" class="btn btn-secondary">Veja Mais</button></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="./img/console.png" alt="Card image cap" style="width: 50%; display: flex; align-items: center; margin: 0 auto;">
+                    <div class="card-body">
+                        <h5 class="card-title">Pedagógico</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. </p>
+                        <a href="pedago.html"><button type="button" class="btn btn-secondary">Veja Mais</button></a>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    <!-- Fim da seção Dicas -->
+
+    <div class="parallax p3" id="section-3">
+        <hgroup id="hp3">
+            <h3 class="display-5">Teste Surpresa! :-)</h3>
+            <p class="lead">Teste seus conhecimentos sobre tipos de aprendizagem.</p>
+        </hgroup>
+    </div>
+
+    <!-- Início de Footer -->
+    <footer>
+        <div class="row" id="row-quizz" style="padding-top:15vh; padding-bottom:15vh; display: flex;
+        margin: 0 auto;">
+            <div class="col-6">
+                <p class="lead" > Você sabe qual o tipo de experiência que favorece a sua aprendizagem? Faça o teste e descubra! </p>
+            </div>
+            <div class="btn-quizz">
+               <a href="http://www.cchla.ufpb.br/ccmd/aprendizagem/" target="_blank"> <button type="submit" class="btn btn-primary lb-2" style="background:rgb(249, 125, 2);border:none; padding:7vh;">
+                    <strong class="quizz" style: "font-size:10vh; text-align:center;">Quizz</strong>
+               </button>  </a>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                <img src="./img/agora.png" style="width:20%">
+            </div>
+          </footer>
+</body>
+
+</html>
+</body>
+
+</html>
